@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Politique de Confidentialité - PRai Extension</title>
+  <style>
+    :root {
+      --primary-color: #00f3ff;
+      --secondary-color: #ff2a6d;
+      --bg-color: #01012b;
+      --text-color: #d1f7ff;
+      --text-secondary: #a9c6d9;
+      --panel-bg: rgba(3, 11, 36, 0.9);
+      --border-color: #30363d;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      background-image: linear-gradient(to bottom, rgba(1, 1, 43, 0.9), rgba(1, 1, 43, 1)), 
+                         url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="none" stroke="%232a3a4a" stroke-width="0.5"/></svg>');
+      background-size: cover, 20px 20px;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: var(--panel-bg);
+      border-radius: 10px;
+      box-shadow: 0 0 30px rgba(0, 243, 255, 0.1);
+      border: 1px solid var(--border-color);
+    }
+    
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--secondary-color);
+    }
+    
+    h1 {
+      color: var(--primary-color);
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      text-shadow: 0 0 10px rgba(0, 243, 255, 0.5);
+    }
+    
+    .last-updated {
+      color: var(--text-secondary);
+      font-style: italic;
+      font-size: 0.9rem;
+    }
+    
+    h2 {
+      color: var(--secondary-color);
+      font-size: 1.8rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255, 42, 109, 0.3);
+    }
+    
+    h3 {
+      color: var(--primary-color);
+      font-size: 1.3rem;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+    
+    p, ul, ol {
+      margin-bottom: 20px;
+    }
+    
+    ul, ol {
+      padding-left: 25px;
+    }
+    
+    li {
+      margin-bottom: 10px;
+    }
+    
+    strong {
+      color: var(--primary-color);
+    }
+    
+    a {
+      color: var(--secondary-color);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    
+    a:hover {
+      color: var(--primary-color);
+      text-shadow: 0 0 8px rgba(0, 243, 255, 0.5);
+    }
+    
+    .footer {
+      text-align: center;
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-color);
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+        margin: 20px;
+        padding: 20px;
+      }
+      
+      h1 {
+        font-size: 2rem;
+      }
+      
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Politique de Confidentialité - PRai Extension</h1>
+      <p class="last-updated">Dernière mise à jour : 23 mars 2025</p>
+    </header>
+
+    <section id="introduction">
+      <h2>Introduction</h2>
+      <p>Merci d'utiliser PRai, l'extension d'analyse de Pull Requests GitHub. Cette politique de confidentialité décrit comment nous collectons, utilisons et protégeons vos informations lorsque vous utilisez notre extension.</p>
+    </section>
+
+    <section id="who-we-are">
+      <h2>Qui sommes-nous</h2>
+      <p>PRai est une extension Chrome développée par Antoine Terrade, qui vise à améliorer l'expérience des développeurs lors de la revue de Pull Requests sur GitHub en fournissant des statistiques et analyses directement dans l'interface GitHub.</p>
+    </section>
+
+    <section id="data-collection">
+      <h2>Données que nous collectons</h2>
+      
+      <h3>Données collectées automatiquement</h3>
+      <p>L'extension PRai collecte uniquement les données minimales nécessaires à son fonctionnement :</p>
+      <ul>
+        <li><strong>Historique Web limité</strong> : Nous accédons uniquement aux URLs des pages GitHub que vous visitez pour détecter si vous êtes sur une page de Pull Request et permettre l'activation automatique de l'extension.</li>
+        <li><strong>Contenu des Pull Requests</strong> : Lorsque vous consultez une Pull Request sur GitHub, l'extension analyse le contenu de cette PR (fichiers modifiés, lignes ajoutées/supprimées, commentaires) afin de générer les statistiques et visualisations.</li>
+      </ul>
+      
+      <h3>Données fournies par l'utilisateur</h3>
+      <p>Dans les versions futures de l'extension qui incluront l'authentification GitHub :</p>
+      <ul>
+        <li><strong>Informations d'authentification GitHub</strong> : Si vous choisissez d'utiliser la fonctionnalité d'authentification (prévue dans la V2), l'extension stockera votre token d'accès GitHub pour accéder aux repositories privés et augmenter les limites d'API.</li>
+      </ul>
+      
+      <h3>Données stockées localement</h3>
+      <ul>
+        <li><strong>Préférences utilisateur</strong> : L'extension stocke vos préférences (comme le thème visuel choisi et les paramètres d'affichage) dans le stockage local du navigateur.</li>
+      </ul>
+    </section>
+
+    <section id="data-usage">
+      <h2>Comment nous utilisons vos données</h2>
+      <p>Les données collectées sont utilisées uniquement aux fins suivantes :</p>
+      <ol>
+        <li><strong>Fournir les fonctionnalités de l'extension</strong> : Analyser les Pull Requests et afficher des statistiques et visualisations.</li>
+        <li><strong>Personnaliser l'expérience utilisateur</strong> : Mémoriser vos préférences d'interface.</li>
+        <li><strong>Authentifier avec GitHub</strong> (fonctionnalité future) : Permettre l'accès aux repositories privés et augmenter les limites d'API GitHub.</li>
+      </ol>
+    </section>
+
+    <section id="data-sharing">
+      <h2>Partage de données</h2>
+      <p>Nous ne partageons aucune de vos données avec des tiers. Toutes les données collectées sont utilisées uniquement au sein de l'extension et ne sont pas transmises à nos serveurs ou à d'autres services.</p>
+    </section>
+
+    <section id="data-security">
+      <h2>Sécurité des données</h2>
+      <p>Nous prenons la sécurité de vos données au sérieux :</p>
+      <ul>
+        <li>Les tokens d'authentification GitHub (lorsque cette fonctionnalité sera disponible) seront stockés de manière sécurisée dans le stockage local de l'extension.</li>
+        <li>Aucune donnée n'est transmise en dehors de votre navigateur, à l'exception des requêtes directes vers l'API GitHub nécessaires au fonctionnement de l'extension.</li>
+      </ul>
+    </section>
+
+    <section id="your-rights">
+      <h2>Vos droits</h2>
+      <p>Vous avez les droits suivants concernant vos données :</p>
+      <ul>
+        <li><strong>Droit d'accès</strong> : Vos données sont stockées localement dans votre navigateur et vous pouvez y accéder via les outils de développement de Chrome.</li>
+        <li><strong>Droit à l'effacement</strong> : Vous pouvez supprimer toutes les données stockées par l'extension en la désinstallant ou en effaçant les données du site dans les paramètres de Chrome.</li>
+      </ul>
+    </section>
+
+    <section id="policy-changes">
+      <h2>Modifications de la politique de confidentialité</h2>
+      <p>Nous pouvons mettre à jour cette politique de confidentialité de temps à autre pour refléter des changements dans nos pratiques. Nous vous encourageons à consulter périodiquement cette page pour prendre connaissance des dernières informations sur nos pratiques de confidentialité.</p>
+    </section>
+
+    <section id="children">
+      <h2>Utilisation par les enfants</h2>
+      <p>L'extension PRai est destinée aux développeurs et n'est pas conçue pour être utilisée par des enfants de moins de 13 ans.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Si vous avez des questions concernant cette politique de confidentialité ou sur la façon dont nous traitons vos données, vous pouvez nous contacter :</p>
+      <ul>
+        <li><strong>GitHub</strong> : <a href="https://github.com/TonyLaPoche" target="_blank">https://github.com/TonyLaPoche</a></li>
+        <li><strong>Email</strong> : [votre.email@exemple.com] (remplacez par votre email professionnel)</li>
+      </ul>
+    </section>
+
+    <section id="consent">
+      <h2>Consentement</h2>
+      <p>En utilisant l'extension PRai, vous consentez à notre politique de confidentialité.</p>
+    </section>
+
+    <div class="footer">
+      PRai · Analyseur de Pull Requests GitHub avec intelligence artificielle<br>
+      Développé avec passion par <a href="https://github.com/TonyLaPoche" target="_blank">Antoine Terrade</a>
+    </div>
+  </div>
+</body>
+</html> 
